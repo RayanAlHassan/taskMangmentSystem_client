@@ -1,0 +1,90 @@
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+.createdDate {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 14px;
+    color: #666;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    height: 80%;
+}
+
+.completeButton {
+    background-color: #990186b3;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.completeButton:hover {
+    background-color: #99018645;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 6px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    flex: 1 1 auto;
+    min-width: 120px;
+}
+
+.editButton {
+    background-color: #472042;
+}
+
+.editButton:hover {
+    background-color: #5f3b5a;
+}
+
+.deleteButton {
+    background-color: #e9e3e3;
+    color: #990186b3;
+}
+
+.deleteButton:hover {
+    background-color: #d6d1d1;
+}
+
+.completedButton {
+    background-color: #4e9b3a;
+}
+
+.completedButton:hover {
+    background-color: #3d7a29;
+}

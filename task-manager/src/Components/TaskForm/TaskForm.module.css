@@ -1,0 +1,89 @@
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 19;
+  }
+  
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 90%;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, #472042, white);
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem;
+    border: none;
+    align-items: center;
+    z-index: 20;
+  }
+  
+  .h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .inputField, .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  
+  .textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .submitButton, .cancelButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #990186b3;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cancelButton {
+    background-color: #e9e3e3;
+    color: #990186b3;
+    margin-top: 1rem;
+  }
+  
+  .submitButton:hover {
+    background-color: #99018645;
+  }
+  
+  .successMessage {
+    text-align: center;
+    color: green;
+  }
+  

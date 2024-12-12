@@ -3,13 +3,19 @@ This is the React-based frontend for the Task Management System. It provides a u
 
 Features
 Task Display:
+
 View a list of tasks.
 Separate actions for completed and active tasks.
 Task Management:
+
 Add new tasks using a form.
 Mark tasks as completed or undo completed status.
 Edit existing tasks.
 Delete tasks.
+Task Filtering and Sorting:
+
+Filter tasks by completed or active status.
+Sort tasks by creation date or task title.
 Built With
 React: JavaScript library for building the user interface.
 Axios: HTTP client for making API requests.
@@ -36,8 +42,9 @@ Create a .env file in the project root.
 Add the following variable:
 plaintext
 Copy code
-REACT_APP_API_URL=http://localhost:5000
-Replace http://localhost:5000 with the actual backend URL if it’s hosted remotely.
+REACT_APP_PATH=http://localhost:5001
+Replace http://localhost:5001 with the actual backend URL if it’s hosted remotely.
+
 Start the development server:
 
 bash
@@ -46,15 +53,21 @@ npm start
 The application will be available at http://localhost:3000.
 
 Folder Structure
+yaml
+Copy code
 src
-components
-TaskList.js: Displays tasks in a list format.
-TaskForm.js: Form to add or edit tasks.
-TaskActions.js: Provides buttons for task completion, undo, or deletion.
-services
-api.js: Axios setup for API requests.
-App.js: Main application component.
-index.js: Application entry point.
+│
+├── components
+│   ├── TaskList.js: Displays tasks in a list format.
+│   ├── TaskForm.js: Form to add or edit tasks.
+│   ├── TaskActions.js: Provides buttons for task completion, undo, or deletion.
+│
+├── services
+│   ├── api.js: Axios setup for API requests.
+│
+├── App.js: Main application component.
+├── index.js: Application entry point.
+
 Assumptions and Decisions
 API Integration: Assumes the backend implements RESTful conventions for managing tasks.
 Task Editing: Allows inline edits for task titles and descriptions.
@@ -68,4 +81,3 @@ This project is licensed under the MIT License.
 
 Authors
 Rayan Al Hassan
-
